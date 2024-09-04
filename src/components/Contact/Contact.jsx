@@ -5,8 +5,6 @@
 
 import axios from "axios";
 import { useState } from "react";
-import { firestore } from "../firebase"; // Adjust the path as needed
-import { collection, addDoc } from "firebase/firestore";
 
 export default function Contact() {
   const [flag, setFlag] = useState(false);
