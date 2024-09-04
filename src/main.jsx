@@ -8,9 +8,9 @@ import ProductDetails from './components/Product/ProductDetails.jsx'
 import ShoppingCart from './components/Product/ShoppingCart.jsx'
 import CheckoutProcess from './components/Product/CheckoutProcess.jsx'
 import UserAccountDashboard from './components/User/UserAccountDashboard.jsx'
-import NotFound from '../../mywebsite/src/components/NotFound/NotFound.jsx'
 import About from '../../mywebsite/src/components/About/About.jsx'
 import Contact from '../../mywebsite/src/components/Contact/Contact.jsx'
+import NotFound from './components/NotFound/NotFound.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,7 +22,7 @@ const router = createBrowserRouter(
         <Route path="/cart" element={<ShoppingCart />} />
         <Route path="/checkout" element={<CheckoutProcess />} />
         <Route path="/account" element={<UserAccountDashboard />} />
-        <Route path="/*" element={<ProductGrid />} />
+        <Route path="/*" element={<NotFound />} />
     </Route>
   )
 )
